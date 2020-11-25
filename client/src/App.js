@@ -68,7 +68,7 @@ function App() {
 
   const renderChat = () => {
     return chat.map(({name, message}, index) => (
-      <div key={index}>
+      <div key={index} className="message">
         <h3>{name}:  <span>{message}</span></h3>
       </div>
     ))
